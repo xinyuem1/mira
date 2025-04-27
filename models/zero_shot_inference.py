@@ -6,7 +6,7 @@ class ZeroShotInferenceEngine:
         self.client = OpenAI(api_key=api_key, base_url=base_url)
         
     def generate_interpretation(self, compound, context_type):
-        """执行零样本推理"""
+        # zero-shot inference
         prompt = "Can you to analyze compound \"{compound}\" and provide its \"{type}\" meanings. \
 When offering definitions, please use reliable dictionary sources such as the Cambridge Dictionary or Collins Dictionary for reference. \
 Please analyze what is the subject that this meaning is most likely to describe. Like human/man/animals.\
